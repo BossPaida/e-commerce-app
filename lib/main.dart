@@ -1,5 +1,5 @@
+import 'package:e_commerce_app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
-
 import 'bottom_bar.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BottomBarScreen(),
+      home: WelcomeScreen(),
     );
   }
 }

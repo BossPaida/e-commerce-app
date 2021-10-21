@@ -3,6 +3,7 @@ import 'package:e_commerce_app/screens/feeds.dart';
 import 'package:e_commerce_app/screens/home.dart';
 import 'package:e_commerce_app/screens/search.dart';
 import 'package:e_commerce_app/screens/user.dart';
+import 'package:e_commerce_app/const/my_icons.dart';
 import 'package:flutter/material.dart';
 
 class BottomBarScreen extends StatefulWidget {
@@ -68,12 +69,12 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             currentIndex: _selectedIndex,
             items: [
               BottomNavigationBarItem(
-                icon: Icon(Icons.home),
+                icon: Icon(MyIcons.home),
                 tooltip: 'Home',
                 label: 'Home',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.rss_feed),
+                icon: Icon(MyIcons.rss),
                 tooltip: 'Feeds',
                 label: 'Feeds',
               ),
@@ -87,12 +88,12 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
                 label: 'Search',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.shopping_bag),
+                icon: Icon(MyIcons.cart),
                 tooltip: 'Cart',
                 label: 'Cart',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.person),
+                icon: Icon(MyIcons.user),
                 tooltip: 'User',
                 label: 'User',
               ),
@@ -106,7 +107,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         backgroundColor: Colors.purple,
         tooltip: 'Search',
         elevation: 5,
-        child: (Icon(Icons.search)),
+        child: (Icon(MyIcons.search)),
         onPressed: () {
           setState(() {
             _selectedIndex = 2;
